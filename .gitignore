@@ -1,0 +1,4 @@
+# exclude .idea folder with files
+./.idea
+**/.idea
+**/.idea/**
