@@ -2,3 +2,19 @@
 ./.idea
 **/.idea
 **/.idea/**
+
+# exclude unnessary folders and files for gradle
+.gradle/
+**/.gradle/
+**/.gradle/**
+.gradle/**
+
+gradle/
+**/gradle/**
+gradle/wrapper/**
+
+# exclude unnessary folders and files for gradle
+build/
+build/*
+*/build/*
+**/build/**
