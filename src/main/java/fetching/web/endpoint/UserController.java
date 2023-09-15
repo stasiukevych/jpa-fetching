@@ -5,6 +5,7 @@ import fetching.model.Role;
 import fetching.model.User;
 import fetching.web.service.UserService;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
@@ -44,6 +45,7 @@ public class UserController {
   }
 
   @GET
+  @Transactional
   @Path("checkLazyLoading/{id}")
   public Response checkLazyLoading(@PathParam("id") Long id) {
     userService.checkLazyLoadingByUserId(id);
